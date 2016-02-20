@@ -181,7 +181,7 @@ footer a{
 }
 
 .collection, .site, .shop, .social {
-padding-top: 2px;
+  float: left;
   display: inline-block;
   width: 24%;
 }
