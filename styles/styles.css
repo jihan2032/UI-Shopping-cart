@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
 header {
   padding: 36px 0;
   border-color: #e5e5e5;
@@ -17,18 +22,19 @@ header a{
   font-size: 14px;
 }
 
-.container {
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
-nav {
+nav, header .logo {
   float: left;
 }
 
-nav h1 {
-  position: absolute;
-  left: -99999px;
+header h1 {
+  margin: 0;
+}
+
+header .logo {
+  background-color: #000;
+  color: #fff;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 header ul {
@@ -36,18 +42,13 @@ header ul {
   padding: 0;
 }
 
-nav li {
+nav li, header .logo {
   margin: 0 20px 0 0;
 }
 
-nav li, .user-links li {
+header .logo, nav li, .user-links li {
   display: inline-block;
   padding: 13px;
-}
-
-nav li.logo {
-  background-color: #000;
-  color: #fff;
 }
 
 .user-links {
@@ -160,8 +161,7 @@ section.items-wrapper {
 
 .twitter {
   text-align: center;
-/*  padding: 0 5%;
-*/  color: #fff;
+  color: #fff;
 }
 
 .twitter .tweet {
@@ -238,24 +238,24 @@ footer h1 {
   margin-bottom: 20px;
 }
 
-.collection, .site, .shop, .social {
+.footer-col {
   float: left;
-  width: 24%;
+  width: 25%;
   height: 100%;
 }
 
-.site, .shop, .social{
+.footer-col:nth-child(n+2) {
   padding-left: 20px;
   border-left: solid;
   border-width: 1px;
   border-color: #e5e5e5;
 }
 
-.social ul {
+.footer-col:nth-child(4) ul {
   padding: 0;
 }
 
-.social li {
+.footer-col:nth-child(4) li {
   display: inline-block;
   margin-right: 14px;
 }
