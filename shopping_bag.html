@@ -4,6 +4,11 @@
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <script>
+      window.jQuery ||
+      document.write('<script src="scripts/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="scripts/main.js"></script>
   </head>
   <body>
     <header class="container clearfix">
@@ -47,8 +52,14 @@
           </td>
           <td>One color</td>
           <td>39</td>
-          <td>1+-</td>
-          <td>&euro; 89,95</td>
+          <td>
+            <span class="align-left amount">0</span>
+            <span class="align-right form-buttons">
+              <button class="add-btn">+</button>
+              <button class="sub-btn">-</button>
+            </span>
+          </td>
+          <td class="product-price">10,00</td>
           <td>X</td>
         </tr>
         <tr>
@@ -59,8 +70,14 @@
           </td>
           <td>One color</td>
           <td>M</td>
-          <td>1+-</td>
-          <td>&euro; 89,95</td>
+          <td>
+            <span class="align-left amount">0</span>
+            <span class="align-right form-buttons">
+              <button class="add-btn">+</button>
+              <button class="sub-btn">-</button>
+            </span>
+          </td>
+          <td class="product-price">10,00</td>
           <td>X</td>
         </tr>
         <tr>
@@ -71,14 +88,20 @@
           </td>
           <td>Black</td>
           <td>S</td>
-          <td>1+-</td>
-          <td>&euro; 89,95</td>
+          <td>
+            <span class="amount">0</span>
+            <span class="align-right form-buttons">
+              <button class="add-btn">+</button>
+              <button class="sub-btn">-</button>
+            </span>
+          </td>
+          <td class="product-price">10,00</td>
           <td>X</td>
         </tr>
       </table>
       <div class="subtotals-row">
         <span>Subtotal:</span>
-        <span class="total-value"> &euro; 89,95</span>
+        <span class="total-value">0,00</span>
       </div>
     </section>
 
@@ -89,7 +112,7 @@
         <div class="form-group">
           <label>select delivery method</label>
           <select class="form-select">
-            <option>DHL</option>
+            <option>DHL International - &euro; 89,95</option>
             <option>LA</option>
           </select>
         </div>
