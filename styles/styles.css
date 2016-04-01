@@ -321,19 +321,20 @@ section.slider {
 }
 
 /* shopping_bag */
+  /* bag-items */
 
-.bag-items h1,p {
+.bag-items, h1,p{
   text-align: center;
 }
 
-.bag-items h1 {
+.bag-items h1, .shipping-address h1 {
   padding-top: 100px;
   text-transform: uppercase;
   font-size: 36px;
   color: #303030;
 }
 
-.bag-items p.subtitle {
+.bag-items p.subtitle ,.shipping-address p.subtitle {
   font-style: italic;
   font-family: Georgia;
   font-size: 18px;
@@ -408,6 +409,68 @@ section.slider {
 .total-value {
   padding: 0 120px 0 30px;
   color: orange;
+}
+
+/*shipping-address*/
+
+.shipping-address {
+  margin-top: 170px;
+  border-color: #e5e5e5;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.shipping-address p.subtitle {
+  margin-bottom: 95px;
+}
+
+.shipping-form {
+  margin: 0 auto;
+  max-width: 50%;
+  color: #676767;
+  font-size: 12px;
+}
+
+.shipping-form .form-group {
+  margin-bottom: 50px;
+}
+
+.shipping-form label {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.shipping-form input {
+  height: 40px;
+  width: 100%;
+}
+
+.shipping-form .form-select{
+  line-height: 40px;
+  width: 100%;
+}
+
+.shipping-form .right-form-group {
+  float: right;
+  width: 48%;
+}
+
+.shipping-form .left-form-group {
+  float: left;
+  width: 48%;
+}
+
+.shipping-form .checkbox-label input {
+  width: 15px;
+}
+
+.shipping-form .checkbox-label {
+  padding: 0 33%;
+}
+
+.shipping-form .checkbox-label::after {
+  content: " User this address for Billing";
 }
 
 footer {
