@@ -107,80 +107,84 @@
       </table>
       <div class="subtotals-row">
         <span>Subtotal:</span>
-        <span class="total-value">0,00</span>
+        <span class="total-value">0</span>
       </div>
     </section>
 
-    <section class="shipping-address container clearfix">
-      <h1>shipping address</h1>
-      <p class="subtitle">All fields are required</p>
-      <form class="shipping-form">
-        <div class="form-group">
-          <label>select delivery method</label>
-          <select class="form-select">
-            <option>DHL International - &euro; 89,95</option>
-            <option>LA</option>
-          </select>
-        </div>
-        <div class="form-group left-form-group">
-          <label>first name</label>
-          <input></input>
-        </div>
-        <div class="form-group right-form-group">
-          <label>last name</label>
-          <input></input>
-        </div>
-        <div class="form-group">
-          <label>address (line1)</label>
-          <input></input>
-        </div>
-        <div class="form-group">
-          <label>address (line2)</label>
-          <input></input>
-        </div>
-        <div class="form-group left-form-group">
-          <label>city name</label>
-          <input></input>
-        </div>
-        <div class="form-group right-form-group">
-          <label>postal code</label>
-          <input></input>
-        </div>
-        <div class="form-group left-form-group">
-          <label>phone number</label>
-          <input></input>
-        </div>
-        <div class="form-group right-form-group">
-          <label>e-mail</label>
-          <input></input>
+    <form class="order-form">
+      <section class="shipping-address container clearfix">
+        <h1>shipping address</h1>
+        <p class="subtitle">All fields are required</p>
+        <div class="shipping-fields">
+          <div class="form-group">
+            <label>select delivery method</label>
+            <select class="form-select">
+              <option>DHL International - &euro; 89,95</option>
+              <option>LA</option>
+            </select>
+          </div>
+          <div class="form-group left-form-group">
+            <label>first name</label>
+            <input required="true"></input>
+          </div>
+          <div class="form-group right-form-group">
+            <label>last name</label>
+            <input required="true"></input>
+          </div>
+          <div class="form-group">
+            <label>address (line1)</label>
+            <input required="true"></input>
+          </div>
+          <div class="form-group">
+            <label>address (line2)</label>
+            <input required="true"></input>
+          </div>
+          <div class="form-group left-form-group">
+            <label>city name</label>
+            <input required="true"></input>
+          </div>
+          <div class="form-group right-form-group">
+            <label>postal code</label>
+            <input required="true"></input>
+          </div>
+          <div class="form-group left-form-group">
+            <label>phone number</label>
+            <input required="true"></input>
+          </div>
+          <div class="form-group right-form-group">
+            <label>e-mail</label>
+            <input required="true"></input>
+          </div>
         </div>
 <!--         <div class="form-group">
           <label class="checkbox-label">
             <input type="checkbox">
           </label>
         </div>
- -->      </form>
-    </section>
+ -->
+      </section>
 
-    <section class="payment container">
-      <h1>payment options</h1>
-      <p class="subtitle">All fields are required</p>
-      <form class="payment-form">
-        <div class="payment-info">
-          <span class="field">Subtotal</span>
-          <span class="value">&euro; 89,95</span>
+      <section class="payment container">
+        <h1>payment options</h1>
+        <p class="subtitle">All fields are required</p>
+        <div class="payment-fields">
+          <div class="payment-info">
+            <span class="field">Subtotal</span>
+            <span class="value">&euro; 89,95</span>
+          </div>
+          <div class="payment-info">
+            <span class="field">Shipping</span>
+            <span class="value">&euro; 89,95</span>
+          </div>
+          <div class="payment-info">
+            <span class="field">Total</span>
+            <span class="value">&euro; 89,95</span>
+          </div>
+          <input type="submit" value="order now" class="submit-btn" />
         </div>
-        <div class="payment-info">
-          <span class="field">Shipping</span>
-          <span class="value">&euro; 89,95</span>
-        </div>
-        <div class="payment-info">
-          <span class="field">Total</span>
-          <span class="value">&euro; 89,95</span>
-        </div>
+      </section>
+    </form>
 
-      </form>
-    </section>
     <footer class="container clearfix">
       <div class="footer-col">
         <h1>collection</h1>
