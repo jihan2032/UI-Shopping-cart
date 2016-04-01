@@ -413,7 +413,7 @@ section.slider {
 
 .total-value {
   padding: 0 120px 0 30px;
-  color: orange;
+  color: #f68236;
 }
 
 .delete-product {
@@ -505,12 +505,6 @@ section.slider {
   border: none;
 }
 
-.
-
-/*.add-btn {
-
-}*/
-
 /*payment*/
 
 .payment {
@@ -527,10 +521,33 @@ section.slider {
   font-size: 18px;
 }
 
+.payment-info {
+  padding-bottom: 20px;
+}
+
+.field:last-child {
+  color: #f68236;
+}
+
+.payment-fields .field::after {
+  content: ':';
+}
+
+.payment-fields .field {
+  text-align: right;
+  margin-right: 22px;
+}
+
+.payment-fields .value::before {
+  content: '\20AC';
+}
+
 .order-form .submit-btn {
   width: 200px;
   height: 50px;
-  background-color: orange;
+  color: #fff;
+  background-color: #f68236;
+  border: none;
 }
 
 footer {
