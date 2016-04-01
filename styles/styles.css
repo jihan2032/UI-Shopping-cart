@@ -364,6 +364,7 @@ section.slider {
 .bag-items table td {
   color: #676767;
   font-size: 14px;
+  text-align: left;
 }
 
 .bag-items table td:last-child {
