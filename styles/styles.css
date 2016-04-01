@@ -416,6 +416,12 @@ section.slider {
   color: orange;
 }
 
+.delete-product {
+  background-color: #fff;
+  font-size: 22px;
+  border: none;
+}
+
 /*shipping-address*/
 
 .shipping-address {
